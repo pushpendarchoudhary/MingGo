@@ -40,14 +40,6 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
     //         navigate("/");
     //     }
     // },[dispatch, alert, error, isAuthenticated, navigate]);
-    return(
-        <div>
-            <p>Login screen</p>
-        </div>
-    </div>
-</div>
-        
-        </Fragment>
-    )
+    
 }
 export default Login;
