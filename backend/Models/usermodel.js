@@ -2,10 +2,26 @@ const mongoose = require("mongoose");
 
 const UserSchema = mongoose.Schema({
     name: {
-        type:String,
-        required: [true, "please enter your name"],
-        maxLength:[40, "name cannot exceed 30 characters"],
-        minlength:[4, "name should have more than 4 characters"]
+        
+            FirstName: {
+                type:String,
+                required: [true, "please enter your First name"],
+                maxLength:[15, "name cannot exceed 15 characters"],
+                minlength:[4, "name should have more than 4 characters"]
+            }, 
+
+            MiddleName: {
+                type:String, 
+                maxLength:[15, "name cannot exceed 15 characters"],
+                minlength:[4, "name should have more than 4 characters"]
+            },
+
+            LastName: {
+                type:String,
+                maxLength:[15, "name cannot exceed 15 characters"],
+                minlength:[4, "name should have more than 4 characters"]
+            }
+        
     },
 
     email:{
