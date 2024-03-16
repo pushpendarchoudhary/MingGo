@@ -2,6 +2,7 @@ const Tracks = require("../Models/tracksmodel");
 const router = require("../Routes/trackRoutes");
 const ErrorHandler = require("../Utils/Errorhandler");
 const catchAsyncErrors = require("../Middleware/catchAsyncErrors");
+const ApiFeatures = require("../Utils/apifeatures");
 
 // creating new track -- 
 
@@ -18,7 +19,8 @@ exports.newTrack = catchAsyncErrors (async (req, res, next)=>{
 // All tracks
 exports.getAllTracks = catchAsyncErrors (async (req, res)=>{
 
-    const tracks = await Tracks.find();
+    const apiFeature = new ApiFeatures(Tracks.find(), req.query).search().filter();
+    const tracks = await apiFeature.query;
 
     res.status(200).json({
         success:true,
@@ -28,6 +30,7 @@ exports.getAllTracks = catchAsyncErrors (async (req, res)=>{
 
 // Track details 
 exports.getTrackDetails = catchAsyncErrors (async (req, res, next)=>{
+
     
     const track = await Tracks.findById(req.params.id);
 
