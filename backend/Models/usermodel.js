@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const validator = require("validator");
 
 const UserSchema = mongoose.Schema({
     name: {
@@ -31,9 +32,15 @@ const UserSchema = mongoose.Schema({
         validate:[validator.isEmail,"please enter a valid email"]
     },
     phone:{
-        type:String,
-        required:[true, "please enter your mobile no"],
-        maxLength:[13, "Contact should be of 10 digits"]
+        countryCode:{
+            type:String,
+            required:true,
+        },
+        mobileNumber:{
+            type:String,
+            required:[true, "please enter your mobile no"],
+            maxLength:[13, "Contact should be of 10 digits"]
+        }
 
     },
     password:{
@@ -64,4 +71,5 @@ const UserSchema = mongoose.Schema({
     resetPasswordExpire: Date,
 });
 
-module.exports = mongoose.model("Users", UserSchema);
+const User = new mongoose.model("Users", UserSchema);
+module.exports = User;

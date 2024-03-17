@@ -4,6 +4,7 @@
 /frontend/mingo/node_modules
 /frontend/mingo/.pnp
 /frontend/mingo/.pnp.js
+/backend/config/config.env
 
 # testing
 /frontend/mingo/coverage

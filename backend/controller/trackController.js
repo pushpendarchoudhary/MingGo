@@ -18,13 +18,15 @@ exports.newTrack = catchAsyncErrors (async (req, res, next)=>{
 })
 // All tracks
 exports.getAllTracks = catchAsyncErrors (async (req, res)=>{
-
-    const apiFeature = new ApiFeatures(Tracks.find(), req.query).search().filter();
+    const resultPerPage = 10;
+    const trackCount = await Tracks.countDocument();
+    const apiFeature = new ApiFeatures(Tracks.find(), req.query).search().filter().pagination(resultPerPage);
     const tracks = await apiFeature.query;
 
     res.status(200).json({
         success:true,
-        tracks
+        tracks,
+        trackCount
     })
 })
 
