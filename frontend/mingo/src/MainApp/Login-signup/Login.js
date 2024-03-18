@@ -40,6 +40,53 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
     //         navigate("/");
     //     }
     // },[dispatch, alert, error, isAuthenticated, navigate]);
-    
+    return(
+        <Fragment>
+            
+            <div className="container01">
+    <div className="row loginmain">
+        <div >
+            <div className=" panel border bg-white">
+                <div className="Loginbox">
+                    <h3 className="pt-3 font-weight-bold jobhead">JOB<span className="hunt">HUNT</span></h3>
+                    <p className="panel-headingmain">LOGIN</p>
+                </div>
+                <div className="panel-body p-3">
+                    <form className='loginform'  >
+                        <div className="form-group py-2">
+                            <div className="input-field-div"> 
+                            <MailOutlineIcon /> 
+							<input className="inputF" type="email" placeholder="Email" /> 
+                            </div>
+                        </div>
+                        <div className="form-group py-1 pb-2">
+                            <div className="input-field-div">
+                            <LockOpenIcon />
+							<input className="inputF" type={showPassword ? "text":"password"} placeholder="Enter your Password" /> 
+                            <button  type="button" className="btn bg-white" onClick={handleTogglePasswordVisibility}> {showPassword ?  <VisibilityIcon/>:<VisibilityOffIcon />  }  </button>
+                            </div>
+                        </div>
+						<div className="loginbutton "><button className="loginbutton2 btn btn-primary btn-lg btn-block mt-7" >LOGIN</button></div>
+                        <div className="form-inline formclass">
+							 <input type="checkbox" name="remember" id="remember"/> 
+							 <label htmlFor="remember" className="text-muted">Remember me</label> 
+							 <Link to={`/password/forgot`} id="forgot" className="font-weight-bold">Forgot password?</Link> </div>
+                        
+                        <div className="text-center pt-4 text-muted">Don't have an account? <Link to="/signup">Signup</Link> </div>
+                    </form>
+
+                    
+                    
+                </div>
+                <div className="mx-3 my-2 py-2 bordert">
+                    <div className="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" className="px-2"> <img className="logo" src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt=""/> </a> <a href="https://www.google.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""/> </a> <a href="https://www.github.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt=""/> </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </Fragment>
+    )
 }
 export default Login;

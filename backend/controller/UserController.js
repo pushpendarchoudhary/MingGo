@@ -68,3 +68,5 @@ exports.loginUser = catchAsyncErrors(async ( req , res , next)=>{
 exports.getAllUsers = (req, res)=> {
     res.status(200).json({message:"Route is working Fine"})
 }
+
+// 2:25
