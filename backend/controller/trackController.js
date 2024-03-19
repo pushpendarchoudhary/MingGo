@@ -8,6 +8,7 @@ const ApiFeatures = require("../Utils/apifeatures");
 
 exports.newTrack = catchAsyncErrors (async (req, res, next)=>{
 
+    req.body.uploadedBy = req.user.id;
     const track = await Tracks.create(req.body);
 
     res.status(201).json({
