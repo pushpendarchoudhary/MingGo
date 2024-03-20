@@ -4,6 +4,7 @@ const ErrorHandler = require("../Utils/Errorhandler");
 const catchAsyncErrors = require("../Middleware/catchAsyncErrors");
 const User = require("../Models/usermodel");
 const sendToken = require("../Utils/jwtToken");
+const sendEmail = require("../Utils/sendEmail.js");
 
 //Register a user 
 

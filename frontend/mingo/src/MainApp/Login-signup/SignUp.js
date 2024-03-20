@@ -79,7 +79,7 @@ import FaceIcon from "@material-ui/icons/Face";
         <div >
             <div className=" panel border bg-white">
                 <div className="Loginbox">
-                    <h3 className="pt-3 font-weight-bold jobhead">JOB<span className="hunt">HUNT</span></h3>
+                    <h3 className="pt-3 font-weight-bold jobhead">R<span className="hunt">YTHM</span></h3>
                     <p className="panel-headingmain" >SIGN UP </p>
                 </div>
                 <div className="panel-body p-3">

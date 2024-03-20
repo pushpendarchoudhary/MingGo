@@ -20,7 +20,7 @@ exports.newTrack = catchAsyncErrors (async (req, res, next)=>{
 // All tracks
 exports.getAllTracks = catchAsyncErrors (async (req, res)=>{
     const resultPerPage = 10;
-    const trackCount = await Tracks.countDocument();
+    const trackCount = await Tracks.countDocuments();
     const apiFeature = new ApiFeatures(Tracks.find(), req.query).search().filter().pagination(resultPerPage);
     const tracks = await apiFeature.query;
 

@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center; 
     color: black;
+    margin: 15px;
     
 }
 .Home{
@@ -41,6 +42,6 @@
     font-style: normal;
 }
 .MainScreen{
-    background-color: brown;
+    background-color: rgb(79, 99, 209);
     overflow-y: auto;
 }

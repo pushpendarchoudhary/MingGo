@@ -1,11 +1,12 @@
 import React, { Fragment , useState} from "react";
 import './login.css';
 // import Loader from "../Layout/Loader/Loader";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+import axios from "axios";
 
 
 
@@ -19,9 +20,27 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
     // const [loginEmail, setLoginEmail ] = useState("");
     // const [loginPassword, setLoginPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     
     const handleTogglePasswordVisibility = () => {
         setShowPassword(!showPassword);
+    }
+    const navigate = useNavigate();
+    const handleLogin = async () => {
+        try {
+            // Make the API call to your login endpoint
+            const response = await axios.post('http://localhost: 4000/api/v1/users/login', {
+                email: email,  
+                password: password 
+            });
+            
+            console.log(response.data);
+            navigate("/home");
+        } catch (error) {
+            
+            console.error('Login failed:', error);
+        }
     }
     // const navigate=useNavigate();
     
@@ -48,7 +67,7 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
         <div >
             <div className=" panel border bg-white">
                 <div className="Loginbox">
-                    <h3 className="pt-3 font-weight-bold jobhead">JOB<span className="hunt">HUNT</span></h3>
+                    <h3 className="pt-3 font-weight-bold jobhead">R<span className="hunt">YTHM</span></h3>
                     <p className="panel-headingmain">LOGIN</p>
                 </div>
                 <div className="panel-body p-3">
@@ -56,17 +75,17 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
                         <div className="form-group py-2">
                             <div className="input-field-div"> 
                             <MailOutlineIcon /> 
-							<input className="inputF" type="email" placeholder="Email" /> 
+							<input className="inputF" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} /> 
                             </div>
                         </div>
                         <div className="form-group py-1 pb-2">
                             <div className="input-field-div">
                             <LockOpenIcon />
-							<input className="inputF" type={showPassword ? "text":"password"} placeholder="Enter your Password" /> 
+							<input className="inputF" type={showPassword ? "text":"password"} placeholder="Enter your Password" value={password} onChange={(e) => setPassword(e.target.value)} /> 
                             <button  type="button" className="btn bg-white" onClick={handleTogglePasswordVisibility}> {showPassword ?  <VisibilityIcon/>:<VisibilityOffIcon />  }  </button>
                             </div>
                         </div>
-						<div className="loginbutton "><button className="loginbutton2 btn btn-primary btn-lg btn-block mt-7" >LOGIN</button></div>
+						<div className="loginbutton "><button className="loginbutton2 btn btn-primary btn-lg btn-block mt-7" onClick={handleLogin}>LOGIN</button></div>
                         <div className="form-inline formclass">
 							 <input type="checkbox" name="remember" id="remember"/> 
 							 <label htmlFor="remember" className="text-muted">Remember me</label> 
