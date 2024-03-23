@@ -29,15 +29,15 @@ function App() {
       <Router>
         <div className='HomeContainer'>
         <div className="sidebar">
-            <h1 className="Textlogo"><span>R</span>ythm</h1>
+            <h1 className="Textlogo"><span>R</span>hythm</h1>
             <div >
-                <Link to = "/" className="Options" ><HomeIcon className="HomeIcon"/><h3 className="Home">Home</h3></Link>
-                <Link to = "/" className="Options" ><RadioIcon className=""/><h3 className="Home">Radio</h3></Link>
-                <Link to = "/" className="Options" ><LibraryMusic className=""/><h3 className="Home">Library</h3></Link>
-                <Link to = "/" className="Options" ><PersonIcon className=""/><h3 className="Home">Artist</h3></Link>
-                <Link to = "/" className="Options" ><AlbumIcon className=""/><h3 className="Home">Albums</h3></Link>
-                <Link to = "/" className="Options" ><AccountCircleIcon className=""/><h3 className="Home">Profile</h3></Link>
-                <Link to = "/" className="Options" ><SettingsIcon className=""/><h3 className="Home">Settings</h3></Link>
+                <Link to = "/" className="Options" ><HomeIcon className="Icon"/><h4 className="Home">Home</h4></Link>
+                <Link to = "/" className="Options" ><RadioIcon className="Icon"/><h4 className="Home">Radio</h4></Link>
+                <Link to = "/" className="Options" ><LibraryMusic className="Icon"/><h4 className="Home">Library</h4></Link>
+                <Link to = "/" className="Options" ><PersonIcon className="Icon"/><h4 className="Home">Artist</h4></Link>
+                <Link to = "/" className="Options" ><AlbumIcon className="Icon"/><h4 className="Home">Albums</h4></Link>
+                <Link to = "/" className="Options" ><AccountCircleIcon className="Icon"/><h4 className="Home">Profile</h4></Link>
+                <Link to = "/" className="Options" ><SettingsIcon className="Icon"/><h4 className="Home">Settings</h4></Link>
             </div>
 
         </div>

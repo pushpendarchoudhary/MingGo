@@ -1,11 +1,33 @@
 .Cont{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../media/homepagebg.jpg");
+    /* background-image: url("../media//guitar.jpeg"); */
+    background-position: center;
+    background-size: cover;
+}
+
+.leftSide{
+    flex: 1;
+}
+
+.rightSide{
+    flex: 1;
+    padding-left: 10%;
+}
+
+.guitar{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px #fb7634ea;
+    color: aqua;
+    /* align-items: center; */
     
 }
 
-.comp{
-    margin: 10px;
-    padding: 10px;
-    background-color: transparent;
-}
+
+

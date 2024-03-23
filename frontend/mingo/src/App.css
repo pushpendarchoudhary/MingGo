@@ -22,23 +22,37 @@
 .Options{
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center; 
+    /* justify-content: center;  */
     color: black;
-    margin: 15px;
+    margin: 15px 0px 15px 15px;
+    padding: 5px;
+    text-decoration: none;
+
     
 }
+
+.Icon{
+    margin-right: 10px;
+    height: 1em;
+    
+}
+.Icon svg{
+    width: 100%;
+    height: 100%;
+}
 .Home{
-    height: fit-content;
+    
 }
 .Textlogo span{
-    font-weight: 800;
+    font-weight: 600;
     color: #001233;
+    font-family: serif;
+    font-style: italic;
 }
 .Textlogo{
     text-align: center;
     font-family: "Great Vibes", cursive;
-    font-weight: 400;
+    font-weight: 540;
     font-style: normal;
 }
 .MainScreen{
