@@ -17,6 +17,7 @@ exports.newTrack = catchAsyncErrors (async (req, res, next)=>{
     })
      
 })
+
 // All tracks
 exports.getAllTracks = catchAsyncErrors (async (req, res)=>{
     const resultPerPage = 10;

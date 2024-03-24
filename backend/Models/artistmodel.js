@@ -40,7 +40,7 @@ const artistSchema = new mongoose.Schema({
 
     albums: [{
         title: String,
-        releaseDate: Date,
+        releaseDate: String,
         tracks: [{
             title: String,
         }]
@@ -64,4 +64,4 @@ const artistSchema = new mongoose.Schema({
 
 const Artist = new mongoose.model("Artist", artistSchema);
 
-exports.module = Artist;
+module.exports = Artist;

@@ -9,6 +9,10 @@ const Home = ()=>{
     return (
         <div className= "Cont">
             <div className="leftSide">
+                <h1 className="Welcome">Welcome to <span>Rhythm</span></h1>
+                <h2 className="Subheading"> A blockchain-based solution for fair compensation</h2>
+                <p className="Subheading2">Empowering music artists to take control of their earning with transparent and Fairness</p>
+                <p className="Subheading2">Upload your music, set prices, and receive your fair share instantly</p>
                 <div className= "comp"><Link to ='/login' ><button>Login/Signup</button></Link></div>
                 <div className= "comp" ><Link to = '/report'><button> Track Report</button></Link></div>
                 <div className= "comp "><Link to = '/royalties'><button>Royalties </button></Link></div>

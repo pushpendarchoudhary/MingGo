@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+
+
 .Cont{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-image: url("../media/homepagebg.jpg");
+    background-color: #080c11;
     /* background-image: url("../media//guitar.jpeg"); */
-    background-position: center;
+  
     background-size: cover;
 }
 
 .leftSide{
     flex: 1;
+    color: #B1412D;
+    color: #f6610be5;
+    padding-left: 25px;
+    text-align: center;
+    
 }
 
 .rightSide{
@@ -19,6 +30,36 @@
     padding-left: 10%;
 }
 
+.Welcome span {
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-style: normal;
+    color: #8A716A;
+}
+
+.Welcome{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px #fb7634ea;
+    
+}
+
+.Subheading{
+    font-family: "Lobster", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px #fb7634ea;
+
+}
+
+.Subheading2{
+    font-size: 16px;
+}
 .guitar{
     max-width: 90%;
     max-height: 90%;

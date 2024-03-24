@@ -232,7 +232,7 @@ exports.getAUser = catchAsyncErrors(async(req,res,next)=>{
     const user = await User.findById(req.params.id);
 
     if(!user){
-        return next(new Errorhandler("user does not exist with Id : "+ req.params.id));
+        return next(new ErrorHandler("user does not exist with Id : "+ req.params.id));
     }
 
     res.status(200).json({

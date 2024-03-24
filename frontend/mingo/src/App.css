@@ -12,7 +12,7 @@
 }
 
 .sidebar{
-    background-color: blueviolet;
+    background-color: #252324;
 
 }
 .Button{
@@ -23,7 +23,8 @@
     text-align: center;
     display: flex;
     /* justify-content: center;  */
-    color: black;
+    color: #f6610b;
+    /* color: #fb7634ea; */
     margin: 15px 0px 15px 15px;
     padding: 5px;
     text-decoration: none;
@@ -43,17 +44,15 @@
 .Home{
     
 }
-.Textlogo span{
-    font-weight: 600;
-    color: #001233;
-    font-family: serif;
-    font-style: italic;
-}
+
 .Textlogo{
     text-align: center;
     font-family: "Great Vibes", cursive;
     font-weight: 540;
     font-style: normal;
+    color: #8A716A;
+    font-style: italic;
+    margin-top: 20px;
 }
 .MainScreen{
     background-color: rgb(79, 99, 209);

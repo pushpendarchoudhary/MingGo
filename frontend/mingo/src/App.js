@@ -29,7 +29,7 @@ function App() {
       <Router>
         <div className='HomeContainer'>
         <div className="sidebar">
-            <h1 className="Textlogo"><span>R</span>hythm</h1>
+            <h1 className="Textlogo">Rhythm</h1>
             <div >
                 <Link to = "/" className="Options" ><HomeIcon className="Icon"/><h4 className="Home">Home</h4></Link>
                 <Link to = "/" className="Options" ><RadioIcon className="Icon"/><h4 className="Home">Radio</h4></Link>
