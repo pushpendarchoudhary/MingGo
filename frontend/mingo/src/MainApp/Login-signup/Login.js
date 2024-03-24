@@ -61,16 +61,15 @@ import axios from "axios";
     // },[dispatch, alert, error, isAuthenticated, navigate]);
     return(
         <Fragment>
-            
             <div className="container01">
     <div className="row loginmain">
         <div >
-            <div className=" panel border bg-white">
+            <div className=" panel ">
                 <div className="Loginbox">
-                    <h3 className="pt-3 font-weight-bold jobhead">R<span className="hunt">YTHM</span></h3>
+                    <h3 className="pt-3 font-weight-bold jobhead">Rhythm</h3>
                     <p className="panel-headingmain">LOGIN</p>
                 </div>
-                <div className="panel-body p-3">
+                <div className="p-3">
                     <form className='loginform'  >
                         <div className="form-group py-2">
                             <div className="input-field-div"> 
@@ -82,7 +81,7 @@ import axios from "axios";
                             <div className="input-field-div">
                             <LockOpenIcon />
 							<input className="inputF" type={showPassword ? "text":"password"} placeholder="Enter your Password" value={password} onChange={(e) => setPassword(e.target.value)} /> 
-                            <button  type="button" className="btn bg-white" onClick={handleTogglePasswordVisibility}> {showPassword ?  <VisibilityIcon/>:<VisibilityOffIcon />  }  </button>
+                            <button  type="button" className="btn eye" onClick={handleTogglePasswordVisibility}> {showPassword ?  <VisibilityIcon/>:<VisibilityOffIcon />  }  </button>
                             </div>
                         </div>
 						<div className="loginbutton "><button className="loginbutton2 btn btn-primary btn-lg btn-block mt-7" onClick={handleLogin}>LOGIN</button></div>
@@ -97,7 +96,7 @@ import axios from "axios";
                     
                     
                 </div>
-                <div className="mx-3 my-2 py-2 bordert">
+                <div className="">
                     <div className="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" className="px-2"> <img className="logo" src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt=""/> </a> <a href="https://www.google.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""/> </a> <a href="https://www.github.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt=""/> </a> </div>
                 </div>
             </div>
