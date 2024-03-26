@@ -27,7 +27,7 @@ body {
     background-color: #252324;
     background-color: #0F1720;
     border-radius: 20px;
-    box-shadow: 8px 8px 25px #fb7634ea;
+    box-shadow: 10px 10px 15px 1px #fb7634ea;
     
 }
 
@@ -46,7 +46,7 @@ body {
 
 
 .panel-headingmain  {
-    color: rgba(0,0,0,0.678);
+    color: rgb(255, 130, 21);
     font : 300 1.5vmax "Roboto";
     transition: all 0.5s;  
     cursor: pointer;
@@ -63,7 +63,17 @@ body {
 }
 
 .loginbutton2{
+    width: 10vw;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #0F1720;
+    border-radius: 12px;
+    color: #fb7634;
+    text-shadow: 0.1px 0.1px 0.2px #fb7634ea;
+    box-shadow: 5px 5px 10px #fb7634;
     width: 100%;
+    margin-bottom: 12px;
+
 }
 
 #forgot {
@@ -102,7 +112,7 @@ a:hover {
     align-items: center;
     cursor: pointer;
     border: 4px solid #f6610be5;
-    color: #4343ff;
+    color: #f6580f;
     /* background-color: #252324; */
 }
 
@@ -119,7 +129,7 @@ a:hover {
 }
 
 .eye{
-    color: white;
+    color: rgb(238, 93, 21);
 }
 
 .logo {
@@ -128,6 +138,7 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     position: relative;
+    box-shadow: 3px 3px 5px #fb7634;
 }
 
 a[target='_blank'] {
@@ -153,8 +164,14 @@ a[target='_blank'] {
 }
 .formclass{
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
+    color: #f6580f;
     /* background-color: #252324; */
+}
+
+.remtext{
+    color: rgb(255, 130, 21);
+    /* margin-top: 8px; */
 }
 
 .loginbutton{
@@ -162,7 +179,7 @@ a[target='_blank'] {
     justify-content: center;
     margin-top: 20px;
     border-radius: 15px;
-    background-color: #0D6EFD;
+    /* background-color: #0D6EFD; */
 }
 
 .registerImage > img {
@@ -187,7 +204,7 @@ a[target='_blank'] {
     transition: all 0.5s;
     padding: 0 1vmax;
     color: rgba(255, 250, 250, 0.623);
-    background-color: rgb(39, 62, 130);
+    background-color: #252324;
   }
   
 .registerImage > input::file-selector-button:hover {

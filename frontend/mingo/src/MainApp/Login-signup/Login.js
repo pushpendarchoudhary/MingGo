@@ -84,20 +84,20 @@ import axios from "axios";
                             <button  type="button" className="btn eye" onClick={handleTogglePasswordVisibility}> {showPassword ?  <VisibilityIcon/>:<VisibilityOffIcon />  }  </button>
                             </div>
                         </div>
-						<div className="loginbutton "><button className="loginbutton2 btn btn-primary btn-lg btn-block mt-7" onClick={handleLogin}>LOGIN</button></div>
+						<div className="loginbutton "><button className="loginbutton2 btn" onClick={handleLogin}>LOGIN</button></div>
                         <div className="form-inline formclass">
 							 <input type="checkbox" name="remember" id="remember"/> 
-							 <label htmlFor="remember" className="text-muted">Remember me</label> 
-							 <Link to={`/password/forgot`} id="forgot" className="font-weight-bold">Forgot password?</Link> </div>
+							 <label htmlFor="remember" className=" remtext">Remember me</label> 
+							 <Link to={`/password/forgot`} id="forgot" className="remtext">Forgot password?</Link> </div>
                         
-                        <div className="text-center pt-4 text-muted">Don't have an account? <Link to="/signup">Signup</Link> </div>
+                        <div className="text-center pt-4 text-muted ">Don't have an account? <Link className="remtext" to="/signup">Signup</Link> </div>
                     </form>
 
                     
                     
                 </div>
                 <div className="">
-                    <div className="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" className="px-2"> <img className="logo" src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt=""/> </a> <a href="https://www.google.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""/> </a> <a href="https://www.github.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt=""/> </a> </div>
+                    <div className="text-center py-3 "> <a href="https://wwww.facebook.com" target="_blank" className="px-2"> <img className="logo" src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt=""/> </a> <a href="https://www.google.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""/> </a> <a href="https://www.github.com" target="_blank" className="px-2"> <img className="logo" src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt=""/> </a> </div>
                 </div>
             </div>
         </div>

@@ -77,9 +77,9 @@ import FaceIcon from "@material-ui/icons/Face";
             { <div className="container01">
     <div className="row loginmain">
         <div >
-            <div className=" panel border bg-white">
+            <div className=" panel ">
                 <div className="Loginbox">
-                    <h3 className="pt-3 font-weight-bold jobhead">R<span className="hunt">YTHM</span></h3>
+                    <h3 className="pt-3 font-weight-bold jobhead">Rhythm</h3>
                     <p className="panel-headingmain" >SIGN UP </p>
                 </div>
                 <div className="panel-body p-3">
@@ -117,7 +117,7 @@ import FaceIcon from "@material-ui/icons/Face";
                                 multiple={false}
                             />
                         </div>
-                        <div className="loginbutton"><input className="btn btn-primary btn-lg btn-block mt-7" type="submit" value="Signup" /></div>
+                        <div className="loginbutton"><button className="loginbutton2 btn" type="submit" value="Signup" >Register</button></div>
                     </form>
 
                     
