@@ -9,7 +9,8 @@ This is a Rights and Royalties Management System using Blockchain application bu
 - Visually appealing and responsive .
 - Ability to save the user's view state in local storage.
 
-##Prerequisities
+## Prerequisities
+
 Before you begin, ensure you have the following software instaleed on your machine:
 
 1. Node.js : Ensure you have Node.js installed. You can download it from Node.js official website(version 18)
@@ -20,6 +21,7 @@ Before you begin, ensure you have the following software instaleed on your machi
 6. Prettier and Prettier ESlint extension in VS Code
 7. Ganache CLI (Install with : npm install -g ganache)
 8. Truffle CLI (Install with : npm install -g truffle)
+9. Windows OS.
 
 
  
