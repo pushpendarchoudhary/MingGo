@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 80vh;
+    height: 100%;
     /* background-color: #080c11 ; */
 }
 
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #080c11 ;
-    height: 100%;
+    /* height: 100%;  */
 }
 
 .loginmain{
@@ -148,7 +148,7 @@ a[target='_blank'] {
 }
 
 .bordert {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #ababab;
     position: relative;
     /* background-color: #252324; */
 }

@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import './home.css';
 import '../../App.css';
 import guitar from "../media/guitar.jpeg";
+import MetaData from "../Layout/Metadata";
 
 
 const Home = ()=>{
     return (
         <div className= "Cont">
+            <MetaData title="Home"/>
             <div className="leftSide">
                 <h1 className="Welcome">Welcome to <span>Rhythm</span></h1>
                 <h2 className="Subheading"> A blockchain-based solution for fair compensation</h2>

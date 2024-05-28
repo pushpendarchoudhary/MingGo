@@ -7,6 +7,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import axios from "axios";
+import MetaData from "../Layout/Metadata";
 
 
 
@@ -61,6 +62,7 @@ import axios from "axios";
     // },[dispatch, alert, error, isAuthenticated, navigate]);
     return(
         <Fragment>
+            <MetaData title="Login"/>
             <div className="container01">
     <div className="row loginmain">
         <div >

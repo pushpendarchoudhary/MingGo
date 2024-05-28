@@ -1,0 +1,33 @@
+
+
+.poster{
+    max-width: 10vw;
+    max-height: 10vh;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.listMain{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+
+.songsNames{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.small1{
+    font-size: 16px;
+    margin: 0;
+}
+
+.sub{
+    font-size: 12px;
+    letter-spacing:2px;
+}

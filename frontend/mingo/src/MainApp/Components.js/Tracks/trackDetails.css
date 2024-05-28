@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.track-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080c11;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 1px #fb7634ea;
+    max-width: 600px;
+    margin: 20px auto;
+    color: white;
+}
+
+.track-details-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.track-title {
+    font-size: 24px;
+    color: #fb7634;
+}
+
+.track-artist {
+    font-size: 18px;
+    color: #8A716A;
+}
+
+.track-details-body {
+    width: 100%;
+}
+
+.track-info {
+    margin-bottom: 20px;
+}
+
+.track-info p {
+    margin: 5px 0;
+}
+
+.track-thumbnail {
+    margin-bottom: 20px;
+}
+
+.track-thumbnail h3 {
+    color: #fb7634;
+    margin-bottom: 10px;
+}
+
+.thumbnail-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 5px #fb7634;
+}
+
+.track-copyright, .track-royalties, .track-usage-rights, .track-blockchain, .track-stats {
+    margin-bottom: 20px;
+}
+
+.track-copyright p, .track-royalties p, .track-usage-rights p, .track-blockchain p, .track-stats p {
+    margin: 5px 0;
+}
+
+.track-royalties h3, .track-usage-rights h3, .track-blockchain h3 {
+    color: #fb7634;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 760px) {
+    .track-details-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .track-title {
+        font-size: 20px;
+    }
+
+    .track-artist {
+        font-size: 16px;
+    }
+
+    .thumbnail-image {
+        width: 80px;
+        height: 80px;
+    }
+}

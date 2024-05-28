@@ -1,0 +1,55 @@
+
+ .UploadForm {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1b1818;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px 1px #fb7634ea; 
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .UploadForm input,
+  .UploadForm textarea,
+  .UploadForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #f6610be5;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #f6580f;
+    background-color: #0F1720;
+  }
+  
+  .UploadForm button {
+    background-color: #0F1720;
+    border-radius: 12px;
+    color: #fb7634;
+    text-shadow: 0.1px 0.1px 0.2px #fb7634ea;
+    box-shadow: 5px 5px 10px #fb7634;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  } 
+
+  .UploadForm button:hover {
+    background-color: #ababab8c;
+  }
+  
+  .UploadForm input[type="file"] {
+    padding: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .FormMain{
+    background-color: #080c11 ;
+    width: 100%;
+  }
